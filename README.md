@@ -1,27 +1,44 @@
-# ECommerce
+# Angular E-Commerce Application [Live Demo](https://e-commerce-with-angular-lyart.vercel.app/)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+This is a basic setup for an e-commerce angular App. It allows you to list all products and get the details of a specific product.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Display a list of products
+- pgainated list of products
+- filter products by category (categories are from backend)
+- get details of a product by running a resolver or by a subscribtion to a behvior subject if we had the data 
 
-## Code scaffolding
+## Problems I faced while working
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. the API i supposed to use doesn't support neither pagination nor filter ```https://fakestoreapi.com/```
+2. the newly used API doesn't return the list size after each call so this reflected on a lot of calls ``` https://fakeapi.platzi.com/en/ ```
+3. as the API is public so there're a lot of dummy data and users add and delete info so i tried to filter the returned data and don't show it at all  
 
-## Build
+## Supported development features
+- Used lazy loading (so it will be open for expansion)
+- more useable folder structure (for easier development and to apply single responsibility)
+- ngx-bootstrap for faster development and good UI
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Technologies Used
 
-## Running unit tests
+- Angular
+- Angular CLI 16.2.0
+- ngx-Bootstrap
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Getting Started
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Clone the repository:
+```
+git clone https://github.com/MohamedAshrafIbraheem97/e-commerce-with-angular.git
+cd ECommerce
+```
+2. Install dependencies:
+```
+npm install
+```
+3. Run the development server:
+```
+ng serve
+```
+4. Open your browser and visit `http://localhost:4200` to view the application.
