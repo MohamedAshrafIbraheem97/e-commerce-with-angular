@@ -1,0 +1,22 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 col-md-6 ">
+            <div class="image-container rounded-2 overflow-hidden">
+                <carousel [noWrap]="false" [showIndicators]="false" [interval]="0">
+                    <slide *ngFor="let image of product?.images">
+                      <img [src]="image" class="d-block w-100" [alt]="product.title">
+                    </slide>
+                  </carousel>
+            </div>
+        </div> 
+        <div class="col-12 col-md-6">
+            <h2>{{ product.title }}</h2>
+            <p class="text-muted">Category: 
+                <span class="badge bg-info text-dark">{{ product.category.name }}</span>                    
+            </p>
+            <p>{{ product.description }}</p>
+            <p>Price: <span class="text-primary h5">{{ product.price }}</span></p>
+        </div>
+    </div>
+</div>
+  

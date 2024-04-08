@@ -1,0 +1,14 @@
+.card {
+    height: 100%;
+}
+
+.card:hover .card-img-top{
+    transform: scale(1.2);
+    
+}
+.card-img-top {
+    max-height: 300px; 
+    width: 100%; 
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }

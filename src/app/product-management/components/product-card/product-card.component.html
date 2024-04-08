@@ -1,0 +1,15 @@
+<div class="card">
+    <carousel [noWrap]="false" [showIndicators]="false" [interval]="0">
+      <slide *ngFor="let image of product.images">
+        <img [src]="image" class="card-img-top" [alt]="product.title">
+      </slide>
+    </carousel>
+    <div class="card-body d-flex flex-column justify-content-between">
+      <div>
+        <h5 class="card-title">{{ product.title }}</h5>
+        <p class="card-text">Price: {{ product.price }}</p>
+      </div>
+      <a [routerLink]="['/products/details', product.id]" (click)="onProductClick(product)" class="btn btn-primary mt-3">View Details</a>
+    </div>
+  </div>
+  

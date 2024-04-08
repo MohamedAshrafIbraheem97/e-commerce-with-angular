@@ -1,0 +1,11 @@
+.card-scroll {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+.card {
+    display: inline-block;
+    width: 300px; /* Adjust card width as needed */
+    margin-right: 10px; /* Add margin between cards */
+  }
+  
